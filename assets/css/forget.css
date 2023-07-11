@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: var(--body-color);
+}
+
+.forget_box,
+.changePass_box,
+.confirm_box
+{
+    display: none;
+    flex-direction: column;
+    position: relative;
+    width: 500px;
+    color: var(--text-color);
+    overflow: hidden;
+    padding: 0 10px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    padding-bottom: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--tran-05);
+}
+
+.forget_box.active,
+.confirm_box.active
+{
+    display: flex;
+    opacity: 1;
+    pointer-events: all;
+}
+.reset_box
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 500px;
+    color: var(--text-color);
+    overflow: hidden;
+    padding: 0 10px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    padding-bottom: 20px;
+}
+
+
+.title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1em;
+}
+.title .head 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+.title .head a
+{
+    text-decoration: none;
+}
+.title .fa-arrow-left
+{
+    display: inline;
+    color: var(--text-color);
+    font-size: 20px;
+}
+.forget,
+.confirm,
+.changePass,
+.reset
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 30px 0; */
+}
+.forget .input_box,
+.confirm .input_box,
+.changePass .input_box,
+.reset .input_box
+{
+    margin-top: 30px;
+}

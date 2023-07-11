@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: var(--body-color);
+}
+.login_signup_box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 400px;
+    min-height: 550px;
+    max-height: 650px;
+    color: var(--text-color);
+    overflow: hidden;
+    padding: 0 10px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    overflow-y: auto;
+}
+.swapbox{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    width: 100%;
+}
+.swapbox h2{
+    width: 50%;
+    text-align: center;
+    letter-spacing: 2.5px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 20px 0;
+}
+.swapbox #SWAP{
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 50%;
+    left: 0%;
+    top: calc(1.5em + 40px - 2.5px);
+    background-color: var(--text-color);
+    transition: var(--tran-05);
+
+}
+#SWAP.toright{
+    left:50%;
+}
+.error-text{
+    display: none;
+    width: 90%;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    color: var(--error-color);
+    word-wrap: break-word;
+    font-weight: 500;
+}
+.login_signup{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: calc(550px - (1.5em + 40px));
+    margin: 70px 0;
+}
+.login,
+.signup{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--tran-05);
+}
+.login.active,
+.signup.active{
+    top: 0;
+    pointer-events: all;
+    opacity: 1;
+}
+
+
+
+

@@ -1,0 +1,101 @@
+.input_box{
+    position: relative;
+    width: 80%;
+    margin-left: 20px;
+}
+.input_box input,
+.input_box textarea{
+    width: 100%;
+    padding: 20px;
+    border: 2px solid var(--border-fade-color);/*primary color*/
+    background-color: var(--body-color);
+    border-radius: 5px;
+    outline: none;
+    color: var(--text-color);
+    font-size: 0.9em;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    /* transition: var(--tran-05); */
+}
+.input_box textarea ~ span,
+.input_box input ~ span{
+    position: absolute;
+    padding: 20px;
+    left: 0;
+    pointer-events: none;
+    font-size: 1em;
+    color: var(--text-color);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: var(--tran-05);
+    transform: translate(0, 0);
+}
+
+.input_box input:valid,
+.input_box textarea:valid,
+.input_box textarea:focus,
+.input_box input:focus{
+    border: 2px solid var(--border-color);
+}
+.input_box input:valid ~ span,
+.input_box textarea:valid ~ span,
+.input_box textarea:focus ~ span,
+.input_box input:focus ~ span{
+
+    background-color: var(--body-color);
+    color: var(--text-color);
+    border-left: 2px solid var(--border-color);
+    border-right: 2px solid var(--border-color);
+    transform: translateY(-10px) translateX(10px);
+    padding: 5px;
+    font-size: 0.6em;
+    font-weight: 600;
+}
+.input_box:nth-child(even) input:valid ~ span,
+.input_box:nth-child(even) textarea:valid ~ span,
+.input_box:nth-child(even) textarea:focus ~ span,
+.input_box:nth-child(even) input:focus ~ span{
+    background-color: var(--border-color);
+    border: none;
+    color: var(--body-color);
+}
+
+.passwordInput .togglebtn
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    width: 30px;
+    height: 30px;
+    top: 15px;
+    right: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.passwordInput .togglebtn::before
+{
+    content: '\f06e';
+    font-family: fontAwesome;
+}
+.passwordInput .togglebtn.hide::before
+{
+    content: '\f070';
+    font-family: fontAwesome;
+}
+textarea{
+    font-family: 'Poppins', sans-serif;
+    transition: all 0s!important;
+    resize: vertical;
+    width: 75%;
+}
+
+::-webkit-calendar-picker-indicator{
+    background-color: var(--text-color);
+    color: var(--text-color);
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}

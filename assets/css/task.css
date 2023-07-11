@@ -1,0 +1,139 @@
+
+
+#countdown{
+    margin-top:10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#countdown p{
+    height: 70px;
+    min-width: 70px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 15px;
+    padding: 10px;
+    background: var(--body-color);
+    border: 1px solid var(--clr);
+    box-shadow: 0 5px 6px -5px var(--clr), 5px 6px 15px var(--clr);
+}
+.error-text{
+    display: none;
+    width: 90%;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    color: var(--error-color);
+    word-wrap: break-word;
+    font-weight: 500;
+}
+
+.x-manage_task{
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+    width: 100%;
+    flex-direction: row;
+}
+
+.home{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    max-width: 100%;
+    height: 100vh;
+    color: var(--text-color);
+    background: var(--body-color);
+    overflow-y: auto;
+}
+.task_box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 75%;
+    max-width:1200px;
+    height: 75%;
+    color: var(--text-color);
+    overflow: hidden;
+    padding: 20px 10px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    opacity: 1;
+    pointer-events: all;
+    transition: var(--tran-05);
+    gap: 30px;
+    overflow-y: auto;
+}
+
+textarea {
+    resize: vertical;
+    width: 75%;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1em;
+}
+.title .head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 1em;
+
+}
+
+.error-text{
+    display: none;
+    width: 90%;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    color: var(--error-color);
+    word-wrap: break-word;
+    font-weight: 500;
+    flex-direction:column;
+}
+.x-manage_task{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.label{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom:15px
+}
+.title .fa-arrow-left {
+    display: inline;
+    color: var(--text-color);
+    font-size: 20px;
+}
+.title .head {
+    display:flex;
+    align-items:center;
+    gap: 10px;
+}
+.title .head a {
+    text-decoration: none;
+}
+
+
+
+
